@@ -81,7 +81,7 @@ git clone https://github.com/carlostabordayaho-gif/conversor-monedas-java.git
 
 Abre el proyecto en IntelliJ IDEA
 
-Asegúrate de tener Java 11 o superior
+Asegúrate de tener Java 17 o superior
 
 Ejecuta la clase:
 
