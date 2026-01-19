@@ -1,61 +1,134 @@
-# 💱 Conversor de Monedas en Java
+💱 Conversor de Monedas en Java
 
-Este proyecto es un **Conversor de Monedas** desarrollado en **Java**, como parte del **Challenge ONE - Oracle Next Education / Alura Latam**.
+Este proyecto es un Conversor de Monedas desarrollado en Java, como parte del Challenge ONE – Oracle Next Education / Alura Latam.
 
-La aplicación consume una API de tasas de cambio en tiempo real y permite convertir valores entre diferentes monedas a través de un menú interactivo por consola.
+La aplicación permite convertir valores entre diferentes monedas utilizando tasas de cambio en tiempo real, consumiendo una API externa y aplicando los principios de la Programación Orientada a Objetos (POO).
 
----
+📌 Descripción del Proyecto
 
-## 🚀 Funcionalidades
+El Conversor de Monedas es una aplicación de consola que interactúa con el usuario a través de un menú, permitiéndole seleccionar el tipo de conversión deseada e ingresar un valor para obtener el resultado convertido.
 
-- Conversión entre diferentes monedas:
-    - Dólar (USD) → Peso Argentino (ARS)
-    - Peso Argentino (ARS) → Dólar (USD)
-    - Dólar (USD) → Real Brasileño (BRL)
-    - Real Brasileño (BRL) → Dólar (USD)
-- Consumo de API externa con tasas actualizadas
-- Menú interactivo por consola
-- Manejo de errores y validaciones
-- Código organizado siguiendo el paradigma de **Programación Orientada a Objetos**
+El sistema consume datos de una API de tasas de cambio, procesa la información en formato JSON y realiza las conversiones de manera precisa y eficiente.
 
----
+Este proyecto fue desarrollado con el objetivo de consolidar conocimientos en Java Back-End, buenas prácticas de programación y consumo de APIs.
 
-## 🛠️ Tecnologías Utilizadas
+🚀 Funcionalidades
 
-- Java 11+
-- IntelliJ IDEA
-- API Exchange Rate
-- Gson
-- Git & GitHub
+Menú interactivo por consola
 
----
+Conversión entre las siguientes monedas:
 
-## 📦 Estructura del Proyecto
+Dólar (USD) → Peso Argentino (ARS)
+
+Peso Argentino (ARS) → Dólar (USD)
+
+Dólar (USD) → Real Brasileño (BRL)
+
+Real Brasileño (BRL) → Dólar (USD)
+
+Dólar (USD) → Peso Colombiano (COP)
+
+Peso Colombiano (COP) → Dólar (USD)
+
+Consumo de API externa con tasas de cambio actualizadas
+
+Manejo de errores y validaciones de entrada
+
+Arquitectura organizada siguiendo principios de POO
+
+Código limpio, modular y reutilizable
+
+🛠️ Tecnologías Utilizadas
+
+Java 17
+
+IntelliJ IDEA
+
+Exchange Rate API
+
+Gson
+
+Git & GitHub
+
+📦 Estructura del Proyecto
 src
 └── main
-└── java
-└── com.alura.conversor
-├── principal
-├── api
-├── modelo
-└── util
+    └── java
+        └── com.alura.conversor
+            ├── api
+            │   └── ExchangeRateClient.java
+            ├── modelo
+            │   └── ExchangeRateResponse.java
+            ├── util
+            │   └── ConversorService.java
+            └── principal
+                └── Principal.java
+
+🔑 API Utilizada
+
+Exchange Rate API
+Proporciona tasas de cambio en tiempo real de forma gratuita y sencilla de implementar.
+
+Ejemplo de endpoint utilizado:
+
+https://v6.exchangerate-api.com/v6/API_KEY/latest/USD
+
+▶️ Cómo Ejecutar el Proyecto
+
+Clona este repositorio:
+
+git clone https://github.com/carlostabordayaho-gif/conversor-monedas-java.git
+
+Abre el proyecto en IntelliJ IDEA
+
+Asegúrate de tener Java 11 o superior
+
+Ejecuta la clase:
+
+Principal.java
 
 
----
+Sigue las instrucciones del menú en la consola
 
-## 🔑 API Utilizada
+🧠 Conceptos Aplicados
 
-**Exchange Rate API**  
-Permite obtener tasas de cambio actualizadas en tiempo real.
+Programación Orientada a Objetos (POO)
 
-https://v6.exchangerate-api.com/v6/TU_API_KEY/latest/USD
----
+Consumo de APIs REST con HttpClient
 
+Manejo de JSON con Gson
 
----
+Uso de records
 
-## ▶️ Cómo Ejecutar el Proyecto
+Manejo de excepciones
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/carlostabordayaho-gif/conversor-monedas-java.git
+Separación de responsabilidades
+
+Clean Code
+
+Control de flujo y estructuras de control
+
+📌 Posibles Mejoras (Extras)
+
+Uso de enum para las monedas
+
+Formateo de valores monetarios
+
+Historial de conversiones
+
+Persistencia en archivos
+
+Interfaz gráfica
+
+👤 Autor
+
+Carlos Taborda
+Estudiante de Back-End Java – Oracle Next Education / Alura Latam
+
+🌐 Redes Profesionales
+
+Este proyecto forma parte de mi portafolio y fue compartido en LinkedIn como evidencia de aprendizaje y desarrollo profesional.
+
+🏆 Challenge ONE – Oracle Next Education
+
+Proyecto desarrollado como parte del programa Oracle Next Education (ONE) en colaboración con Alura Latam, enfocado en la formación de desarrolladores Back-End con Java.
